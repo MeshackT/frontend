@@ -1,0 +1,140 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    box-shadow: 0 1px 3px -2px black;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+    width: 40px;
+    margin-top: 20px;
+}
+
+.nav-logo p {
+    color: #171717;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color: #000;
+    font-weight: 500;
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+    color: #000;
+}
+
+.nav-menu hr {
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background: #FF4141;
+}
+
+.nav-login-cart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0px;
+}
+
+.nav-login-cart button {
+    width: 157px;
+    height: 58px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    color: #515151;
+    font-size: 20px;
+    font-weight: 500;
+    background: white;
+    cursor: pointer;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.nav-login-cart button:active {
+    background: #f3f3f3f3;
+}
+
+.nav-cart-count {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+    margin-left: 0px;
+    border-radius: 11px;
+    font-size: 14px;
+    background: red;
+    color: white;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+    .nav-menu {
+        gap: 30px; /* Adjusting gap for smaller screens */
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .nav-menu {
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: flex-start; /* Align items to the start */
+        gap: 20px; /* Reduced gap between menu items */
+    }
+
+    .nav-menu li {
+        width: 100%; /* Full width for menu items */
+        text-align: center; /* Center text for menu items */
+    }
+
+    .nav-menu hr {
+        width: 100%; /* Full width for hr */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column; /* Stack navbar items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .nav-menu {
+        gap: 10px; /* Reduced gap between menu items */
+    }
+
+    .nav-login-cart {
+        flex-direction: column; /* Stack login/cart items vertically */
+        align-items: center; /* Center items */
+        gap: 10px; /* Adjusted gap between login/cart items */
+    }
+
+    .nav-login-cart button {
+        width: 100%; /* Full width for login button */
+    }
+
+    .nav-cart-count {
+        margin-top: -25px; /* Adjusted top margin for cart count */
+    }
+}

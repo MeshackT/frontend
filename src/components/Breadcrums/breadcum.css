@@ -1,0 +1,28 @@
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px; /* Smaller font size */
+    color: #5e5e5e;
+    margin: 60px 70px;
+    text-transform: capitalize;
+}
+
+.breadcrumb img {
+    margin: 0 5px;
+    width: 10px; /* Smaller arrow icon size */
+    height: 10px;
+}
+
+/* Media Query for Small Screens (e.g., Mobile) */
+@media screen and (max-width: 768px) {
+    .breadcrumb {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 40px 20px;
+    }
+
+    .breadcrumb img {
+        display: none; /* Hide arrow icons on small screens */
+    }
+}
